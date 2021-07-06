@@ -1,5 +1,7 @@
 % Ejercicio 3 / Puzzle
 % Rodriguez Javier Ceferino
+% Gervasi, Sofia
+% Venanzoni, Martina
 
 %%
 % Limpieza

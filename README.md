@@ -1,5 +1,5 @@
 # TP Final - Procesamiento de Imagenes 📄🖼
-Desarrollo de ejercicios de Trabajo Práctico Final de la materia *Procesamiento de Imágenes**, para Ingeniería Biomédica de UNSAM 2021.
+Desarrollo de ejercicios de Trabajo Práctico Final de la materia **Procesamiento de Imágenes**, para Ingeniería Biomédica de UNSAM 2021.
 
 Se utiliza MATLAB para el desarrollo de los scripts.
 
