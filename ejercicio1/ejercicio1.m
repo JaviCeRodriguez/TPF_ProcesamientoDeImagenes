@@ -55,7 +55,7 @@ subplot(122);imshow(AB,[]);colorbar; title('Matriz de Angulos de los Bordes');
 %Busco graficamente el rango de valores que toman los angulos de los bordes
 %deseados
 
-S=(AB>-87&AB<-83);
+S=(AB>-87&AB<-84);
 
 figure
 subplot(121);imshow(I,[]);colorbar; title('Imagen Original');
