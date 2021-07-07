@@ -28,14 +28,15 @@ end
 I=im2double(I);
 
 %% Filtro Prewitt
-H1=fspecial('prewitt'); %d/dx
-H2=rot90(H1);%d/dy
+dX=fspecial('prewitt') %d/dx
+dY=rot90(H1)%d/dy
 
-Gx=conv2(I,H1,'same');
-Gy=conv2(I,H2,'same');
+Gx=conv2(I,dX,'same');
+Gy=conv2(I,dY,'same');
 
-subplot(121);imshow(Gx,[]);colorbar; title('Filtro Prewitt 3x3 (S)');
-subplot(122);imshow(Gy,[]);colorbar; title('Filtro Prewitt 3x3 (E)');
+figure
+subplot(121);imshow(Gx,[]);colorbar; title('Gx');
+subplot(122);imshow(Gy,[]);colorbar; title('Gy');
 
 
 %% Matriz de Angulos del Gradiente
@@ -43,17 +44,19 @@ G=Gy./Gx;
 AG=atan(G);
 AG=rad2deg(AG);
 
-subplot(111); imshow(AG,[]);colorbar; title ('Matriz de Angulos del Gradiente');
+figure
+subplot(121); imshow(AG,[]);colorbar; title ('Matriz de Angulos del Gradiente');
 
 %% Matriz de Angulos de los Bordes
 AB=AG-90;
 
-subplot(111);imshow(AB,[]);colorbar; title('Matriz de Angulos de los Bordes');
+subplot(122);imshow(AB,[]);colorbar; title('Matriz de Angulos de los Bordes');
 %% Segmento
 %Busco graficamente el rango de valores que toman los angulos de los bordes
 %deseados
 
-S=(AB>-87&AB<-84);
+S=(AB>-87&AB<-83);
 
-subplot(211);imshow(I,[]);colorbar; title('Imagen Original');
-subplot(212);imshow(S,[]);colorbar; title('Bordes Segmentados');
+figure
+subplot(121);imshow(I,[]);colorbar; title('Imagen Original');
+subplot(122);imshow(S,[]);colorbar; title('Bordes Segmentados');
