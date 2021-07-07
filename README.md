@@ -13,6 +13,6 @@ Se utiliza MATLAB para el desarrollo de los scripts.
 - Rios, Betina
 
 # Documentación
-Los enunciados para cada ejercicio a resolver se encuentran en la raíz del repositorio en el documento [Trabajo final PI-IB 2021.pdf](#).
+Los enunciados para cada ejercicio a resolver se encuentran en la raíz del repositorio en el documento [Trabajo final PI-IB 2021.pdf](https://github.com/JaviCeRodriguez/TPF_ProcesamientoDeImagenes/blob/main/Trabajo%20final%20PI-IB%202021.pdf).
 
-Tanto el informe como la presentación, se pueden hallar en la carpeta [entregables](#)
+Tanto el informe como la presentación, se pueden hallar en la carpeta [entregables](https://github.com/JaviCeRodriguez/TPF_ProcesamientoDeImagenes/tree/main/entregables)
