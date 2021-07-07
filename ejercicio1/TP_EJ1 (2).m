@@ -1,7 +1,4 @@
 %% TP - EJ 1 
-% Rodriguez Javier Ceferino
-% Gervasi, Sofia
-% Venanzoni, Martina
 clc;close all;clear all;
 
 %Abro imagen
@@ -29,7 +26,7 @@ I=im2double(I);
 
 %% Filtro Prewitt
 dX=fspecial('prewitt') %d/dx
-dY=rot90(dX)%d/dy
+dY=rot90(H1)%d/dy
 
 Gx=conv2(I,dX,'same');
 Gy=conv2(I,dY,'same');
